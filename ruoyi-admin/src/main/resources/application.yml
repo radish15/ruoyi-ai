@@ -331,7 +331,7 @@ spring:
 --- # 向量库配置
 vector-store:
   # 向量存储类型 (weaviate/milvus)
-  type: weaviate
+  type: milvus
   # Weaviate配置
   weaviate:
     protocol: http
@@ -339,6 +339,6 @@ vector-store:
     classname: LocalKnowledge
   # Milvus配置
   milvus:
-    url: http://localhost:19530
-    collectionname: LocalKnowledge
+    url: http://192.168.0.106:19530
+    collectionname: TEST
 
